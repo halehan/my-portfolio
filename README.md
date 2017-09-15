@@ -1,2 +1,2 @@
 # Thomas D Williams
-This is for later
+This is my professional portfolio.  It uses AWS Node.js and ReactJS
