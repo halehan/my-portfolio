@@ -5,6 +5,8 @@ from botocore.client import Config
 import mimetypes
 
 def lambda_handler(event, context):
+
+     print "Started Lambda Function"
   
     sns = boto3.resource('sns')
     topic = sns.Topic('arn:aws:sns:us-east-1:772417646419:deployPortfolioTopic')
