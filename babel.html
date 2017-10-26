@@ -2,33 +2,48 @@
 <html>
   <head>
    <title>Babel Demo</title>
+   <style media="screen">.errorBox {
+       border: 1px solid red;
+       background-color:  #eebbbb;
+       margin: 1em;
+       padding: 2em;
+   }
+   .errorBox-hidden {
+       display: none;
+   }
+       </style>
   </head>
 
   <body>
     <main class="overflow--auto">
         <label>Name: <input id ="name" type="text"/></label>
         <button id="submit_info">Click Me</button>
-        <div id="content">
-
+        <div id="content"></div>
+        <div id="error" class="errorBox--hidden">
+            Error message geos here.
         </div>
-      
-
     </main>
-<script src="https://unpkg.com/babel-standalone">
-</script>
+
+<script src="https://unpkg.com/babel-standalone"></script>
 <script type"text/babel" data-presets="latest">
 
-const getMessage = (name) => `Welcome to javascript, ${name}!`;
-const button  = document.getElementById('submit_info');
+    const getMessage = (name) => `Welcome to javascript, ${name}!`;
+    const button  = document.getElementById('submit_info');
+    const messageArea = document.getElementById("error");
+    const contentArea = document.getElementById('content');
 
-button.addEventListener('click', (evt) => {
-    let name = document.getElementById("name").value;
+    button.addEventListener('click', (evt) => {
+        messageArea.className = "errorBox--hidden"
+        contentArea.textContent = "";
+        let name = document.getElementById("name").value;
 
-    if (name.length < 2) {
-        alert("You need to enter at least 2 characters");
-    } else {
-        document.getElementById('content').textContent = getMessage(name);
-    }
+        if (name.length < 2) {
+            messageArea.textContent = "You need to enter a name";
+            messageArea.className ="errorBox";
+        } else {
+            contentArea.textContent = getMessage(name);
+      //      document.getElementById('content').textContent = getMessage(name);
+        }
 
 });
 
