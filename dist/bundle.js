@@ -958,13 +958,39 @@ module.exports = getActiveElement;
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_dom__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react_dom__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_dom__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__example_work__ = __webpack_require__(32);
 
 
-console.log("loaded");
 
-console.log("Webpack Works");
+
+const myWork = [{
+    'title': "Work Example",
+    'image': {
+        'desc': "example screenshot of a project involving code",
+        'src': "images/example1.png",
+        'comment': ""
+    }
+}, {
+    'title': "Portfolio Boilerplate",
+    'image': {
+        'desc': "A Serverless Portfolio",
+        'src': "images/example2.png",
+        'comment': ""
+    }
+}, {
+    'title': "Work Example 3",
+    'image': {
+        'desc': "example screenshot of a project involving cats",
+        'src': "images/example3.png",
+        'comment': ""
+    }
+}];
+
+__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__example_work__["a" /* default */], { work: myWork }), document.getElementById('example-work'));
 
 /***/ }),
 /* 16 */
@@ -21164,6 +21190,57 @@ module.exports = function() {
   return ReactPropTypes;
 };
 
+
+/***/ }),
+/* 32 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+
+
+class ExampleWork extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
+    render() {
+        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "section",
+            { className: "section section--alignCentered section--description" },
+            this.props.work.map((example, idx) => {
+                return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(ExampleWorkBubble, { example: example, key: idx });
+            })
+        );
+    }
+}
+
+class ExampleWorkBubble extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
+    render() {
+        let example = this.props.example;
+        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "div",
+            { className: "section__exampleWrapper" },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                "div",
+                { className: "section__example" },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { alt: example.image.desc,
+                    className: "section__exampleImage",
+                    src: example.image.src }),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    "dl",
+                    { className: "color--cloud" },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        "dt",
+                        { className: "section__exampleTitle section__text--centered" },
+                        example.title
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("dd", null)
+                )
+            )
+        );
+    }
+
+}
+
+/* harmony default export */ __webpack_exports__["a"] = (ExampleWork);
 
 /***/ })
 /******/ ]);
