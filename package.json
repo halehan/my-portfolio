@@ -4,10 +4,10 @@
   "description": "This is my professional portfolio.  It uses AWS Node.js and ReactJS",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "test-watch": "jest --watch",
-    "webpack": "webpack",
-    "webpack-watch": "webpack --watch"
+   // "test": "jest",
+   // "test-watch": "jest --watch",
+    "webpack": "webpack"
+   // "webpack-watch": "webpack --watch"
   },
   "repository": {
     "type": "git",
