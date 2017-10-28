@@ -2,12 +2,9 @@
   "name": "my-portfolio",
   "version": "1.0.0",
   "description": "This is my professional portfolio.  It uses AWS Node.js and ReactJS",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-   // "test": "jest",
-   // "test-watch": "jest --watch",
     "webpack": "webpack"
-   // "webpack-watch": "webpack --watch"
   },
   "repository": {
     "type": "git",
