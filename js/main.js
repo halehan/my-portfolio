@@ -4,7 +4,7 @@ import ExampleWork from './example-work';
 
 const myWork = [
 {
-    'title': "Work Examplex",
+    'title': "Work Example",
     'href': "https://example.com",
     'desc': "Lorem  Ipsum you momma",
     'image': {
@@ -24,7 +24,7 @@ const myWork = [
     }
 },
 {
-    'title': "Work Example 3x",
+    'title': "Work Example",
     'href': "https://example.com",
     'desc': "Lorem  Ipsum you momma three",
     'image': {
