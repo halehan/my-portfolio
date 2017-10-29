@@ -974,7 +974,7 @@ var _exampleWork2 = _interopRequireDefault(_exampleWork);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var myWork = [{
-    'title': "Work Examplex",
+    'title': "Work Example",
     'href': "https://example.com",
     'desc': "Lorem  Ipsum you momma",
     'image': {
@@ -992,7 +992,7 @@ var myWork = [{
         'comment': ""
     }
 }, {
-    'title': "Work Example 3x",
+    'title': "Work Example",
     'href': "https://example.com",
     'desc': "Lorem  Ipsum you momma three",
     'image': {
@@ -21306,26 +21306,26 @@ var ExampleWorkBubble = function (_React$Component2) {
     value: function render() {
       var _this4 = this;
 
-      var example = this.props.example;
+      var baller = this.props.example;
       return _react2.default.createElement(
         'div',
         { className: 'section__exampleWrapper',
           onClick: function onClick(evt) {
-            return _this4.props.openModal(evt, example);
+            return _this4.props.openModal(evt, baller);
           } },
         _react2.default.createElement(
           'div',
           { className: 'section__example' },
-          _react2.default.createElement('img', { alt: example.image.desc,
+          _react2.default.createElement('img', { alt: baller.image.desc,
             className: 'section__exampleImage',
-            src: example.image.src }),
+            src: baller.image.src }),
           _react2.default.createElement(
             'dl',
             { className: 'color--cloud' },
             _react2.default.createElement(
               'dt',
               { className: 'section__exampleTitle section__text--centered' },
-              example.title
+              baller.title
             ),
             _react2.default.createElement('dd', null)
           )

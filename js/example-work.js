@@ -50,18 +50,18 @@ class ExampleWork extends React.Component {
 
 class ExampleWorkBubble extends React.Component {
     render() {
-        let example =  this.props.example;
+        let baller =  this.props.example;
          return (
 
             <div className="section__exampleWrapper"
-            onClick={ (evt) => this.props.openModal(evt, example) }> 
+            onClick={ (evt) => this.props.openModal(evt, baller) }> 
             <div className="section__example">
-              <img alt={example.image.desc}
+              <img alt={baller.image.desc}
                    className="section__exampleImage"
-                   src={example.image.src}/>
+                   src={baller.image.src}/>
               <dl className="color--cloud">
                 <dt className="section__exampleTitle section__text--centered">
-                  {example.title}
+                  {baller.title}
                 </dt>
                 <dd></dd>
               </dl>
