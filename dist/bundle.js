@@ -21594,7 +21594,11 @@ var Test = function (_React$Component) {
   _createClass(Test, [{
     key: 'render',
     value: function render() {
-      return 'hello';
+      return _react2.default.createElement(
+        'h2',
+        null,
+        'TEST'
+      );
     }
   }]);
 
