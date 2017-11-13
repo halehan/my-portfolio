@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import ExampleWork from './example-work';
 import SocialInfo from './header-social-info';
-import Test from './header-social-info';
+import Test from './Test';
 
 
 const myWork = [
