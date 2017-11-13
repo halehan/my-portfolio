@@ -1002,6 +1002,23 @@ var myWork = [{
     }
 }];
 
+var socialInfo = [{
+    'title': "LinkedIn Profile",
+    'target': '_blank',
+    'href': "https://www.linkedin.com/in/thomas-darryl-williams-3b43546/",
+    'classInfo': "fa fa-linkedin"
+}, {
+    'title': "GitHub Profile",
+    'target': '_blank',
+    'href': "https://github.com/halehan",
+    'classInfo': "fa fa-github"
+}, {
+    'title': "Resume",
+    'target': '_blank',
+    'href': "ThomasDWilliams-Resume.pdf",
+    'classInfo': "fa fa-file-text"
+}];
+
 _reactDom2.default.render(_react2.default.createElement(_exampleWork2.default, { work: myWork }), document.getElementById('example-work'));
 
 /***/ }),

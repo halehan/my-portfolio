@@ -37,4 +37,27 @@ const myWork = [
 
 ]
 
+const socialInfo = [
+    {
+        'title': "LinkedIn Profile",
+        'target': '_blank',
+        'href': "https://www.linkedin.com/in/thomas-darryl-williams-3b43546/",
+        'classInfo': "fa fa-linkedin",
+    },
+    {
+        'title': "GitHub Profile",
+        'target': '_blank',
+        'href': "https://github.com/halehan",
+        'classInfo': "fa fa-github",
+    },
+    {
+        'title': "Resume",
+        'target': '_blank',
+        'href': "ThomasDWilliams-Resume.pdf",
+        'classInfo': "fa fa-file-text",
+    }
+    
+    ]
+    
+
 ReactDOM.render(<ExampleWork work={myWork}/>, document.getElementById('example-work'));
