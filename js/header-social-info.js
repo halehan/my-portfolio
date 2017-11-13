@@ -41,7 +41,6 @@ class SocialInfoList extends React.Component {
 
 class Test extends React.Component {
     render() {
-        let baller =  this.props.example;
          return (
 
           'hello'

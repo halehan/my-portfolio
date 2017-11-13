@@ -1025,7 +1025,7 @@ var socialInfo = [{
 
 _reactDom2.default.render(_react2.default.createElement(_exampleWork2.default, { work: myWork }), document.getElementById('example-work'));
 _reactDom2.default.render(_react2.default.createElement(_headerSocialInfo2.default, { work: socialInfo }), document.getElementById('social-info'));
-_reactDom2.default.render(_react2.default.createElement(Test, null));
+_reactDom2.default.render(_react2.default.createElement(Test, null), document.getElementById('test'));
 
 /***/ }),
 /* 16 */
@@ -21541,7 +21541,6 @@ var Test = function (_React$Component3) {
     _createClass(Test, [{
         key: "render",
         value: function render() {
-            var baller = this.props.example;
             return 'hello';
         }
     }]);

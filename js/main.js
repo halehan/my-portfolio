@@ -63,4 +63,4 @@ const socialInfo = [
 
 ReactDOM.render(<ExampleWork work={myWork}/>, document.getElementById('example-work'));
 ReactDOM.render(<SocialInfo work={socialInfo}/>, document.getElementById('social-info'));
-ReactDOM.render(<Test/>);
+ReactDOM.render(<Test/>, document.getElementById('test'));
