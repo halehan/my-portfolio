@@ -39,17 +39,5 @@ class SocialInfoList extends React.Component {
 
 }
 
-class Test extends React.Component {
-    render() {
-         return (
-
-          'hello'
-
-         )
-    }
-
-}
-
 export default SocialInfo;
 export { SocialInfoList }; 
-export { Test }; 
