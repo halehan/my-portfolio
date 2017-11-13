@@ -2,7 +2,7 @@
   "name": "my-portfolio",
   "version": "1.0.0",
   "description": "This is my professional portfolio.  It uses AWS Node.js and ReactJS",
-  "main": "main.js",
+  "main": "mainz.js",
   "scripts": {
     "test": "jest",
     "test-watch": "jest --watch",

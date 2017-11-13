@@ -26,7 +26,7 @@ const myWork = [
 {
     'title': "Work Example",
     'href': "https://example.com",
-    'desc': "Lorem  Ipsum you momma three FOUR",
+    'desc': "Lorem  Ipsum you momma three",
     'image': {
         'desc': "example screenshot of a project involving cats",
         'src': "images/example3.png",
