@@ -1025,7 +1025,7 @@ var socialInfo = [{
 
 _reactDom2.default.render(_react2.default.createElement(_exampleWork2.default, { work: myWork }), document.getElementById('example-work'));
 _reactDom2.default.render(_react2.default.createElement(_headerSocialInfo2.default, { work: socialInfo }), document.getElementById('social-info'));
-_reactDom2.default.render(_react2.default.createElement(Test, null), document.getElementById('test'));
+_reactDom2.default.render(_react2.default.createElement(_headerSocialInfo2.default, null), document.getElementById('test'));
 
 /***/ }),
 /* 16 */
