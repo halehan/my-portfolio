@@ -51,4 +51,5 @@ class Test extends React.Component {
 }
 
 export default SocialInfo;
-export { SocialInfoList, Test }; 
+export { SocialInfoList }; 
+export { Test }; 
