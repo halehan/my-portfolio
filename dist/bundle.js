@@ -971,6 +971,10 @@ var _exampleWork = __webpack_require__(32);
 
 var _exampleWork2 = _interopRequireDefault(_exampleWork);
 
+var _headerSocialInfo = __webpack_require__(34);
+
+var _headerSocialInfo2 = _interopRequireDefault(_headerSocialInfo);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var myWork = [{
@@ -1020,6 +1024,7 @@ var socialInfo = [{
 }];
 
 _reactDom2.default.render(_react2.default.createElement(_exampleWork2.default, { work: myWork }), document.getElementById('example-work'));
+_reactDom2.default.render(_react2.default.createElement(_headerSocialInfo2.default, { work: socialInfo }), document.getElementById('social-info'));
 
 /***/ }),
 /* 16 */
@@ -21440,6 +21445,91 @@ var ExampleWorkModal = function (_React$Component) {
 
 ;
 exports.default = ExampleWorkModal;
+
+/***/ }),
+/* 34 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.SocialInfoList = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(3);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var SocialInfo = function (_React$Component) {
+    _inherits(SocialInfo, _React$Component);
+
+    function SocialInfo(props) {
+        _classCallCheck(this, SocialInfo);
+
+        return _possibleConstructorReturn(this, (SocialInfo.__proto__ || Object.getPrototypeOf(SocialInfo)).call(this, props));
+    }
+
+    _createClass(SocialInfo, [{
+        key: "render",
+        value: function render() {
+            return _react2.default.createElement(
+                "ul",
+                { "class": "section--social" },
+                this.props.work.map(function (example, idx) {
+                    return _react2.default.createElement(SocialInfoList, { example: example, key: idx });
+                })
+            );
+        }
+    }]);
+
+    return SocialInfo;
+}(_react2.default.Component);
+
+var SocialInfoList = function (_React$Component2) {
+    _inherits(SocialInfoList, _React$Component2);
+
+    function SocialInfoList() {
+        _classCallCheck(this, SocialInfoList);
+
+        return _possibleConstructorReturn(this, (SocialInfoList.__proto__ || Object.getPrototypeOf(SocialInfoList)).apply(this, arguments));
+    }
+
+    _createClass(SocialInfoList, [{
+        key: "render",
+        value: function render() {
+            var baller = this.props.example;
+            return _react2.default.createElement(
+                "li",
+                { "class": "socialWrapper" },
+                _react2.default.createElement(
+                    "a",
+                    { "class": "color--skyBlue social",
+                        title: baller.title,
+                        target: baller.target,
+                        href: baller.href },
+                    _react2.default.createElement("i", { "class": baller.classInfo })
+                )
+            );
+        }
+    }]);
+
+    return SocialInfoList;
+}(_react2.default.Component);
+
+exports.default = SocialInfo;
+exports.SocialInfoList = SocialInfoList;
 
 /***/ })
 /******/ ]);
