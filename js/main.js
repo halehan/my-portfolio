@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import ExampleWork from './example-work';
 import SocialInfo from './header-social-info';
-import Test from './test';
+
 
 
 const myWork = [
@@ -65,4 +65,3 @@ const socialInfo = [
 
 ReactDOM.render(<ExampleWork work={myWork}/>, document.getElementById('example-work'));
 ReactDOM.render(<SocialInfo work={socialInfo}/>, document.getElementById('social-info'));
-ReactDOM.render(<Test/>, document.getElementById('test'));

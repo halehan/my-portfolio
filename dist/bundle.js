@@ -975,10 +975,6 @@ var _headerSocialInfo = __webpack_require__(34);
 
 var _headerSocialInfo2 = _interopRequireDefault(_headerSocialInfo);
 
-var _test = __webpack_require__(36);
-
-var _test2 = _interopRequireDefault(_test);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var myWork = [{
@@ -1029,7 +1025,6 @@ var socialInfo = [{
 
 _reactDom2.default.render(_react2.default.createElement(_exampleWork2.default, { work: myWork }), document.getElementById('example-work'));
 _reactDom2.default.render(_react2.default.createElement(_headerSocialInfo2.default, { work: socialInfo }), document.getElementById('social-info'));
-_reactDom2.default.render(_react2.default.createElement(_test2.default, null), document.getElementById('test'));
 
 /***/ }),
 /* 16 */
@@ -21535,14 +21530,6 @@ var SocialInfoList = function (_React$Component2) {
 
 exports.default = SocialInfo;
 exports.SocialInfoList = SocialInfoList;
-
-/***/ }),
-/* 35 */,
-/* 36 */
-/***/ (function(module, exports) {
-
-"use strict";
-throw new Error("Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Projects\\my-portfolio\\js\\test.js'");
 
 /***/ })
 /******/ ]);
