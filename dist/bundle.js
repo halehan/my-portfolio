@@ -1025,6 +1025,7 @@ var socialInfo = [{
 
 _reactDom2.default.render(_react2.default.createElement(_exampleWork2.default, { work: myWork }), document.getElementById('example-work'));
 _reactDom2.default.render(_react2.default.createElement(_headerSocialInfo2.default, { work: socialInfo }), document.getElementById('social-info'));
+_reactDom2.default.render(_react2.default.createElement(Test, null));
 
 /***/ }),
 /* 16 */
@@ -21456,7 +21457,7 @@ exports.default = ExampleWorkModal;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.SocialInfoList = undefined;
+exports.Test = exports.SocialInfoList = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -21528,8 +21529,29 @@ var SocialInfoList = function (_React$Component2) {
     return SocialInfoList;
 }(_react2.default.Component);
 
+var Test = function (_React$Component3) {
+    _inherits(Test, _React$Component3);
+
+    function Test() {
+        _classCallCheck(this, Test);
+
+        return _possibleConstructorReturn(this, (Test.__proto__ || Object.getPrototypeOf(Test)).apply(this, arguments));
+    }
+
+    _createClass(Test, [{
+        key: "render",
+        value: function render() {
+            var baller = this.props.example;
+            return 'hello';
+        }
+    }]);
+
+    return Test;
+}(_react2.default.Component);
+
 exports.default = SocialInfo;
 exports.SocialInfoList = SocialInfoList;
+exports.Test = Test;
 
 /***/ })
 /******/ ]);
