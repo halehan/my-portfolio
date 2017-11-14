@@ -5,10 +5,12 @@ class NameInfo extends React.Component {
     super(props);
   }
 
+   name = 'Thomas Darryl Williams';
+
     render(){
         return (
         <h1 class="color--skyBlue section__heading--largest">
-            Thomas D Williams
+            {name}
         </h1>
         )
     }
