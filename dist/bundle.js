@@ -975,7 +975,7 @@ var _headerSocialInfo = __webpack_require__(34);
 
 var _headerSocialInfo2 = _interopRequireDefault(_headerSocialInfo);
 
-var _nameInfo = __webpack_require__(37);
+var _nameInfo = __webpack_require__(35);
 
 var _nameInfo2 = _interopRequireDefault(_nameInfo);
 
@@ -1029,6 +1029,7 @@ var socialInfo = [{
 
 _reactDom2.default.render(_react2.default.createElement(_exampleWork2.default, { work: myWork }), document.getElementById('example-work'));
 _reactDom2.default.render(_react2.default.createElement(_headerSocialInfo2.default, { work: socialInfo }), document.getElementById('social-info'));
+_reactDom2.default.render(_react2.default.createElement(_nameInfo2.default, null), document.getElementById('name-info'));
 
 /***/ }),
 /* 16 */
@@ -21536,16 +21537,14 @@ exports.default = SocialInfo;
 exports.SocialInfoList = SocialInfoList;
 
 /***/ }),
-/* 35 */,
-/* 36 */,
-/* 37 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -21563,26 +21562,28 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var NameInfo = function (_React$Component) {
-    _inherits(NameInfo, _React$Component);
+  _inherits(NameInfo, _React$Component);
 
-    function NameInfo(props) {
-        _classCallCheck(this, NameInfo);
+  function NameInfo(props) {
+    _classCallCheck(this, NameInfo);
 
-        return _possibleConstructorReturn(this, (NameInfo.__proto__ || Object.getPrototypeOf(NameInfo)).call(this, props));
+    return _possibleConstructorReturn(this, (NameInfo.__proto__ || Object.getPrototypeOf(NameInfo)).call(this, props));
+  }
+
+  // const name = 'Thomas Darryl Williams';
+
+  _createClass(NameInfo, [{
+    key: "render",
+    value: function render() {
+      return _react2.default.createElement(
+        "h1",
+        { "class": "color--skyBlue section__heading--largest" },
+        "Thomas Darryl Williams"
+      );
     }
+  }]);
 
-    _createClass(NameInfo, [{
-        key: "render",
-        value: function render() {
-            return _react2.default.createElement(
-                "h1",
-                { "class": "color--skyBlue section__heading--largest" },
-                "Thomas D Williams"
-            );
-        }
-    }]);
-
-    return NameInfo;
+  return NameInfo;
 }(_react2.default.Component);
 
 exports.default = NameInfo;
