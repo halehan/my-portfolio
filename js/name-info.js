@@ -3,10 +3,8 @@ import React from 'react';
 class NameInfo extends React.Component {
   constructor(props){
     super(props);
-   
+  
   }
-
- // const name = 'Thomas Darryl Williams';
 
     render(){
         return (
