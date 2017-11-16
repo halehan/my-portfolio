@@ -3,11 +3,10 @@ import React from 'react';
 class NameInfo extends React.Component {
   constructor(props){
     super(props);
-    let name = 'Thomas Darryl Williams...';
-   
   }
 
     render(){
+      let name = 'Thomas Darryl Williams...';
         return (
        
         <h1 class="color--skyBlue section__heading--largest">
