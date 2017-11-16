@@ -3,7 +3,7 @@ import React from 'react';
 class NameInfo extends React.Component {
   constructor(props){
     super(props);
-    let name = 'Thomas Darryl Williams';
+    let name = 'Thomas Darryl Williams...';
    
   }
 
@@ -11,7 +11,7 @@ class NameInfo extends React.Component {
         return (
        
         <h1 class="color--skyBlue section__heading--largest">
-             Thomas Darryl Williams
+             {name}
         </h1>
         
         )
