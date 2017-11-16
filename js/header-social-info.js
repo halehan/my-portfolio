@@ -25,12 +25,12 @@ class SocialInfoList extends React.Component {
         let baller =  this.props.example;
          return (
 
-          <li class="socialWrapper">
-            <a class="color--skyBlue social"
+          <li className="socialWrapper">
+            <a className="color--skyBlue social"
                title={baller.title}
                target={baller.target}
                href={baller.href}>
-              <i class={baller.classInfo}></i>
+              <i className={baller.classInfo}></i>
             </a>
           </li>
 
