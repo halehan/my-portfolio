@@ -5,7 +5,6 @@ import SocialInfo from './header-social-info';
 import NameInfo from './name-info';
 
 
-
 const myWork = [
 {
     'title': "Work Example",
