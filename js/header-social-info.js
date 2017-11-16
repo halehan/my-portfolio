@@ -8,7 +8,7 @@ class SocialInfo extends React.Component {
 
     render(){
         return (
-            <ul class="section--social">
+            <ul className="section--social">
             { this.props.work.map( (example, idx )  =>      {
                 return (
                     <SocialInfoList example={example} key={idx}/>
