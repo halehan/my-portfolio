@@ -9,7 +9,7 @@ class NameInfo extends React.Component {
       let name = 'Thomas Darryl Williams...';
         return (
        
-        <h1 class="color--skyBlue section__heading--largest">
+        <h1 className="color--skyBlue section__heading--largest">
              {name}
         </h1>
         
