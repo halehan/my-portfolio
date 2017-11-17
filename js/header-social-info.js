@@ -9,9 +9,9 @@ class SocialInfo extends React.Component {
     render(){
         return (
             <ul className="section--social">
-            { this.props.work.map( (example, idx )  =>      {
+            { this.props.work.map( (social, idx )  =>      {
                 return (
-                    <SocialInfoList example={example} key={idx}/>
+                    <SocialInfoList social={social} key={idx}/>
                 )            
               })
             }
@@ -22,7 +22,7 @@ class SocialInfo extends React.Component {
 
 class SocialInfoList extends React.Component {
     render() {
-        let baller =  this.props.example;
+        let baller =  this.props.social;
          return (
 
           <li className="socialWrapper">
